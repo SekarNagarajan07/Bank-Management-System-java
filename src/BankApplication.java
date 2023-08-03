@@ -29,7 +29,11 @@ class BankAccount {
     void withdraw(double amt) {
         if (amt != 0 && bal >= amt) {
             bal = bal - amt;
-            prevTrans = prevTrans = amt;
+            prevTrans = prevTrans - amt;
+        } else {
+            if (bal < amt) {
+                System.out.println("Bank baa=lance insufficient");
+            }
         }
     }
 
