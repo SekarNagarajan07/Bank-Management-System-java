@@ -2,6 +2,13 @@ import java.util.Scanner;
 
 class BankApplication {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter you 'Name' and 'CustomerId' to access your Bank account");
+        String name = sc.nextLine();
+        String customerId = sc.nextLine();
+
+        BankAccount bank = new BankAccount(name, customerId);
+        bank.menu();
 
     }
 }
