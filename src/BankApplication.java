@@ -41,7 +41,7 @@ class BankAccount {
             prevTrans = prevTrans - amt;
         } else {
             if (bal < amt) {
-                System.out.println("Bank baa=lance insufficient");
+                System.out.println("Bank balance insufficient");
             }
         }
     }
@@ -106,7 +106,7 @@ class BankAccount {
                     System.out.println("\n");
                 }
                 case 'e': {
-                    System.out.println("Exit");
+                    System.out.println("___________");
                     break;
                 }
 
