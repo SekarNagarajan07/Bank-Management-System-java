@@ -5,8 +5,13 @@ class BankApplication {
 }
 
 class BankAccount {
-    double Bal;
+    double bal;
     double prevTrans;
     String customerName;
-    String CustomerId;
+    String customerId;
+
+    BankAccount(String customerName, String customerId) {
+        this.customerName = customerName;
+        this.customerId = customerId;
+    }
 }
