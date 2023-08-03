@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 class BankApplication {
     public static void main(String[] args) {
 
@@ -49,6 +51,19 @@ class BankAccount {
         } else {
             System.out.println("No transaction occured");
         }
+    }
+
+    void menu() {
+        char option;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Welcome " + customerName);
+        System.out.println("Your Id:" + customerId);
+        System.out.println("\n");
+        System.out.println("a) Check Balance");
+        System.out.println("b) Deposit Amount");
+        System.out.println("c) Withdraw Amount");
+        System.out.println("d) Previous Transaction");
+        System.out.println("e) Exit");
     }
 
 }
