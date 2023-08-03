@@ -64,6 +64,55 @@ class BankAccount {
         System.out.println("c) Withdraw Amount");
         System.out.println("d) Previous Transaction");
         System.out.println("e) Exit");
+
+        do {
+            System.out.print("Choose an option");
+            option = sc.next().charAt(0);
+            System.out.println("\n");
+
+            switch (option) {
+                case 'a': {
+                    System.out.println("Balance =" + bal);
+                    System.out.println("\n");
+                    break;
+                }
+
+                case 'b': {
+                    System.out.println("Enter a amount to deposit :");
+                    double amt = sc.nextDouble();
+                    deposit(amt);
+                    System.out.println("\n");
+                    break;
+                }
+
+                case 'c': {
+                    System.out.println("Enter a amount to withdraw :");
+                    double amtWithdraw = sc.nextDouble();
+                    withdraw(amtWithdraw);
+                    System.out.println("\n");
+                    break;
+                }
+
+                case 'd': {
+                    System.out.println("Previous Transaction :");
+                    getPreviousTrans();
+                    System.out.println("\n");
+                }
+                case 'e': {
+                    System.out.println("Exit");
+                    break;
+                }
+
+                default: {
+                    System.out.println("Choose a correct option to proceed");
+                }
+            }
+        }
+
+        while (option != 'e');
+
+        System.out.println("Thank you for using our banking services");
+
     }
 
 }
