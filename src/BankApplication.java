@@ -1,5 +1,12 @@
 class BankApplication {
     public static void main(String[] args) {
-        System.out.println("sekar");
+
     }
+}
+
+class BankAccount {
+    double Bal;
+    double prevTrans;
+    String customerName;
+    String CustomerId;
 }
