@@ -14,4 +14,23 @@ class BankAccount {
         this.customerName = customerName;
         this.customerId = customerId;
     }
+
+    // Deposit
+
+    void deposit(double amount) {
+        if (amount != 0) {
+            bal = bal + amount;
+            prevTrans = amount;
+        }
+    }
+
+    // Withdraw
+
+    void withdraw(double amt) {
+        if (amt != 0 && bal >= amt) {
+            bal = bal - amt;
+            prevTrans = prevTrans = amt;
+        }
+    }
+
 }
